@@ -11,12 +11,12 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RequestPredicates.accept;
 
 @Configuration(proxyBeanMethods = false)
-public class GreetingRouter {
+public class VideoRouter {
 
-  @Bean
-  public RouterFunction<ServerResponse> greetingRoute(GreetingHandler greetingHandler) {
+    @Bean
+    public RouterFunction<ServerResponse> videoRoute(VideoHandler videoHandler) {
 
-    return RouterFunctions
-      .route(GET("/").and(accept(MediaType.APPLICATION_JSON)), greetingHandler::hello);
-  }
+        return RouterFunctions
+                .route(GET("/video").and(accept(MediaType.APPLICATION_JSON)), videoHandler::stream);
+    }
 }
