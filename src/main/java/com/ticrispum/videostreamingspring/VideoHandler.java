@@ -16,7 +16,7 @@ import java.net.MalformedURLException;
 public class VideoHandler {
 
     public Mono<ServerResponse> stream(ServerRequest request) {
-        String videoLocation = "../videos";
+        String videoLocation = "./videos";
         String videoName = "SampleVideo_1280x720_1mb.mp4";
         UrlResource video;
 
