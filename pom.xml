@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.ticrispum</groupId>
 	<artifactId>video-streaming-spring</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>video-streaming-spring</name>
 	<description> A simple video streaming service written in Spring </description>
 	<properties>
